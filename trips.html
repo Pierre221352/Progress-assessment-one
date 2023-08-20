@@ -28,16 +28,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="trips.html">Book a Trip</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Weather
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Weather</a>
+                <div id="weatherContainer"></div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About Us</a>
@@ -54,6 +47,40 @@
         </div>
       </nav>
 
+    <div class="container-fluid">
+      <h1>Book a Trip</h1>
+      <p style="color: black;">Explore our selection of handpicked cruise trips that promise to take you on an unforgettable journey through the most stunning 
+        destinations in the world. From the mesmerizing fjords of Norway to the untamed wilderness of Alaska, 
+        our trips offer an unparalleled blend of adventure, culture, and relaxation. 
+        Browse through our diverse range of experiences, each meticulously designed to provide you with a unique perspective on the beauty 
+        and splendor of these enchanting regions. Whether you're seeking serene relaxation or exhilarating exploration, we have the perfect trip waiting just for you.</p>
+    </div>  
+
+  <div class="container-fluid"> 
+    <h4>Filter:</h4> 
+    <div class="filters">
+      <label for="originFilter">Origin:</label>
+      <select id="originFilter">
+          <option value="All">All</option>
+          <option value="Norway">Norway</option>
+          <option value="Bergen">Bergen</option>
+          <option value="Greenland">Greenland</option>
+          <option value="Iceland">Iceland</option>
+          <option value="North Cape">North Cape</option>
+          <option value="Alaska">Alaska</option>
+      </select>
+  
+      <label for="availabilityFilter">Availability:</label>
+      <select id="availabilityFilter">
+          <option value="All">All</option>
+          <option value="Available">Available</option>
+          <option value="Sold Out">Sold Out</option>
+      </select>
+      <button type="submit">Find</button>
+  </div>
+</div> 
+
+
 <p>     
     <div class="container">  
         <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -68,9 +95,9 @@
                     <li class="list-group-item">Departure on Sep 01-Sep 22, 2023</li>
                     <li class="list-group-item">Departure on Sep 08-Sep 26, 2024</li>
                   </ul> 
-              </div>
-              
+              </div> 
             </div>
+            
             <div class="col">
               <div class="card h-100">
                 <img src="assets/image 118.png" class="card-img-top" alt="...">
@@ -111,6 +138,7 @@
                     <li class="list-group-item">Departure on Dec 09, 2023- Dec 23, 2023</li>
                   </ul>
               </div>
+              <a href="checkout.html" class="btn btn-primary">Book Now</a>
             </div>
 
             <div class="col">

@@ -50,6 +50,7 @@ p {
     color: black;
     border-color: black;
     font-size: 14px;
+    font-weight: 600;
     padding: 6px 12px;
     margin-top: 30px;
     display: block;
@@ -61,6 +62,38 @@ p {
     background-color: #FFCC33;
     border-color: black;
 }
+
+h1,h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+.filters {
+    background-color: #FFCC33;
+    padding: 10px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filters select {
+    background-color: white; 
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.filterForm button {
+    background-color: #004C6D;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
 
 .footer {
     height: 90px;
